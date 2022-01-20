@@ -1,0 +1,17 @@
+.tela {
+  display:flex;
+  
+}
+.lista-2 {
+    margin-left:60px;
+  }
+.item {
+  transition: 0.2s all;
+}
+
+.item:hover {
+  color:blue;
+  cursor:pointer;
+  margin-left:4px;
+}
+

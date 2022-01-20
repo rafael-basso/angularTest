@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Angular</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div ng-app="app">
+    <div ng-controller="AppController" class="tela">
+
+      <div class="lista-1">
+        <div>Clique em um item abaixo para adicionar itens em sua lista</div>
+        <div class="item" ng-click="adicionarAoTodo(val,key)" ng-repeat="(key,val) in listaSelecionavel">
+          {{val.id}} {{val.name}}
+        </div>
+      </div>
+
+      <div class="lista-2">
+        <div>New List: (Click on an item to delete)
+          <div ng-repeat="(key,val) in todoItems" ng-click="removeItemTodo(key)" class="item">
+            {{val.id}} {{val.name}}
+          </div>
+        </div>
+      </div>
+
+      <div class="lista-2">
+        <button ng-click="maior()">
+          Longest name in the "New list"
+        </button>
+        <div ng-if="visible==true">
+             {{content}} with {{total}} letters
+        </div>
+      </div>      
+      
+    </div>
+  </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>
