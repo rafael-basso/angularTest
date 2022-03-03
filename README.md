@@ -2,4 +2,4 @@
 
 ## initializing with Angular-js
 
-https://rafael-basso.github.io/angularTest/
+https://codepen.io/rafael-basso-the-decoder/pen/LYyyvKQ
